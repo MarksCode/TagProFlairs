@@ -1,0 +1,24 @@
+{
+"manifest_version": 2,
+"name":"TagPro Flairs",
+"version":"1.0",
+"description":"Use and share custom flairs",
+"permissions":[
+    "storage"    
+],
+"content_scripts":[
+    {
+    "matches": [
+            "http://*.koalabeast.com/*",
+            "http://*.newcompte.fr/*",
+            "http://tangent.jukejuice.com/*"
+                                  
+    ],
+    "js": [
+            "js/thirdParty/jQuery.js" ,
+            "js/TagProFlairs.js"
+    ],
+    "run_at": "document_end"
+    }
+]
+}
